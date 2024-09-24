@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<!-- Tag for the browser to read it as an HTML5 doctype. Call it like a version we are using. -->
+<!-- This is a comment. It will not be seen in the webpage, but you can see them in the developer tools.-->
+<!-- For the bootcamp, its purpose is to tell you an insight of how parts work here in this document.-->
+
+<html>
+    <!-- This is an HTML tag. It holds all elements of the html file. -->
+
+    <head>
+        <!-- This is the head. This is the part where you describe your HTML file. -->
+
+        <title>Learn HTML</title>
+        <!-- This is the Title tag. this is something you'd youd usually see in the tab name or the window name. --> 
+        <!-- Notice how <title> tag ends with </title> tag. Most of the tags end that way -->
+        <!-- Some don't. We'll get to that. -->
+
+        <!-- Notice how we got spaces before each line of code. -->
+        <!-- We call these as indents. they provide readability. -->
+    </head>
+<body>
+
+        <!-- <body> shows what’s visible in the webpage. -->
+
+            <p>Perform a dissection. Right Click on this page and press inspect Element</p>
+            <p>The comments will help you understand what's in it.</p>
+            <p>Hello, World</p>
+        <!-- This is the <p> tag, or a paragraph tag. you can place text with it.-->
+
+            <p><em>This is emphasized, formatted in italic.</em> <strong>And this is strong, formatted in bold.</strong></p>
+        <!-- <strong> tag makes text inside it formatted in bold.-->
+        <!-- <em> tag makes text inside it formatted in italics-->
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <!-- A demonstration of different heading tags.-->
+
+            <ul>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+            </ul>
+            <!-- This is an unordered list. Think of it as only bullet points.-->
+            <!-- <ul> is our wrapper. This is where we can put our list items, with <li> tag.-->
+
+            <ol>
+                <li>Jane Doe</li>
+                <li>John Doe</li>
+            </ol>
+            <!-- This is an ordered list. It has numbers before it. The order is based on what you put first, usually starts on top.-->
+            <!-- <ol> is our wrapper. This is where we can put our list items, with <li> tag.-->
+            
+            <div>
+                <p>I am in a div tag.</p>
+            </div>
+            <!-- About time I should tell you about the <div> tag. -->
+            <!-- <div> tags allow you to group lines of code. One instance for this use is that you could personalize what's in that group with whatever you want it to look.-->
+
+            <p>I have 3 Horizontal rules below me.</p>
+            <hr>
+            <hr>
+            <hr>
+            <!-- <hr> tag is a horizontal rule. -->
+            <!-- Notice that <hr> do not have a closing tag. They're called self-closing tags. <br>, <img> and <hr> are a few examples.-->
+
+            <p>I have a <br> line break</p>
+            <!-- <br> is a line break tag, puts the next set of text on the next line. -->
+            <!-- You can put <br> outside the <p> block. See Line 95. -->
+            <p>Two Lines</p>
+            <p>in two separate p tag lines</p>
+
+            <span>Two lines</span>
+            <span>in two separate span tag lines</span>
+
+            <!-- Notice the difference between <p> and <span>? <p> follows linebreaks in code, while <span> doesn't.-->
+            <!-- We have Inline and Block elements -->
+
+            <!-- Block elements (like <div> or <p>) are big boxes that always start on a new line. -->
+            <!-- Inline elements (like <span> or <a>) are small and stay in the same line with other text. -->
+
+                <p>I have a <span style="color: blue;">span text colored in blue.</span></p>
+                <!-- The <span> tag is like a small box that can hold a piece of text, but it doesn't break the flow of the words. -->
+                <!--It's useful when you want to style or highlight just a part of the text. -->
+                <!-- You can style or highlight specific parts of the text using the <span> tag. -->
+
+                <!-- Notice why one part of the sentence is colored blue? We have what we call "attributes"-->
+                <!-- Attributes provide more information within that specified tag. Applicable to most tags.-->
+                <!-- For instance, we want to color it blue, so we put in a "style" attribute with the value "color: blue;"-->
+
+                <img src="meme.jpg">
+                <!-- Here we have an <img> tag. We need to create a source attribute to show the image-->
+                <!-- So we put an "src" attribute followed by an image file.-->
+                <img src="pics/jonwaek.jpeg" alt="jon wek">
+
+                <br>
+
+                <!-- If an image file is contained in a folder, simply put the folder name followed by a slash, then an image's exact name and extension.-->
+                <img src="jonwaek.jpeg" alt="I can't find the image, but this picture should show an image of jon wek">
+                <!-- If the images don't load, there is an alternative text in a form of an "alt" attribute. When hovered, it will show what the image was in text form.-->
+                    
+                <br>
+
+                <a href="https://web.archive.org/web/19981205094204fw_/http://www.sierrastudios.com:80/games/half-life/">My favorite game's old site</a>
+                <!--We have an <a> tag or an anchor tag.-->
+                <!--Most uses for this is for the links that we create. We have an href tag with the value containing a website address, which leads to that site if we click the text.-->
+                
+                <br>
+
+                <a href="about.html">About Page</a>
+                <!--Locally, we can also use this to lead to another page we just made in this folder.-->
+            
+                <blockquote cite="https://combineoverwiki.net/wiki/The_G-Man/Quotes">
+                    The right man in the wrong place can make all the difference in the world.
+                </blockquote>
+                <!--We can make blockquotes with the <blockquote> tag-->
+                <!-- Make it a habit to add a cite attribute with a valid URL-->
+                <!-- The cite attribute helps search engines like Google for its searches, perhaps even lead people to the included site you made. SEO as they say.-->
+                <br>
+
+                <a href="forms.html">Next Part</a>
+
+                <!--Let's get into the next one. Click the link on the page for the next part.-->
+
+            </body>
+
+            <!-- Sauce:
+
+            Introduction
+            https://youtu.be/hu-q2zYwEYs?si=3Nk5XmkMeLvIHn5b
+
+            Just the Basics
+            https://youtu.be/mbeT8mpmtHA?si=Dq4x0VRtJQZLZ1W6
+
+            In-Depth HTML Sources, for documentation
+
+            Basic Examples - https://www.w3schools.com/html/html_basic.asp
+            Elements - https://www.w3schools.com/html/html_elements.asp
+            Attributes - https://www.w3schools.com/html/html_attributes.asp
+            Headings - https://www.w3schools.com/html/html_headings.asp
+            Paragraphs - https://www.w3schools.com/html/html_paragraphs.asp
+            Styles - https://www.w3schools.com/html/html_styles.asp
+            Formatting - https://www.w3schools.com/html/html_formatting.asp
+            Quotations - https://www.w3schools.com/html/html_quotation_elements.asp
+            Comments, like this one - https://www.w3schools.com/html/html_comments.asp
+            Colors - https://www.w3schools.com/html/html_colors.asp
+            Links - https://www.w3schools.com/html/html_links.asp
+            Images - https://www.w3schools.com/html/html_images.asp
+            Lists - https://www.w3schools.com/html/html_lists.asp
+            Blocks - https://www.w3schools.com/html/html_blocks.asp
+            Div - https://www.w3schools.com/html/html_div.asp
+            Head - https://www.w3schools.com/html/html_head.asp
+
+	    Memes are stolen
+            -->
+
+</html>

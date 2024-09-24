@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms!</title>
+    </head>
+    <body>
+        <a href="index.html">Go Back!</a>
+        <p>Inspect Element, again. See you there!</p>
+
+        <h1>HTML Forms</h1>
+
+        <!--To add a form, add <form> tag.-->
+
+        <form>
+            <!-- We start with Text Inputs, or should we say Text Boxes.-->
+            <label for="username">This is a label for username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- "type" determines the type of input. We want to put in text so we use the value "text"-->
+            <!-- As for "id" and "name", let's just say we will call it as the input's name. Maybe call the textbox as John, you know what I mean.-->
+            <!-- Adding the "required" attribute indicates that the field is required.
+            If a field is optional, there's no need to add the "required" attribute.-->
+            <!-- Notice how we called John or username in the <label> tag. We call him so we can place values for that tag. -->
+            
+            <!-- To get more what I mean, here are some other examples below.-->
+            <!-- Examples include different types of input.-->
+            <br>   
+            <label for="Jane">This is a label for Jane's email</label>
+            <input type="email" id="Jane" name="Jane" required>
+            <br>           
+            <label for="Doe">This is a label for Doe's password</label>
+            <input type="password" id="Doe" name="Doe" required>
+
+            <!-- When you learn Javascript, you'll eventually learn why IDs are essential.-->
+            <!-- Notice how the "name" attribute is just there. It acts similarly as ID. -->
+            <!-- However, this is used for server-sided purposes. You'll learn it when you pick up node.js-->
+            
+
+            <!-- Let's create another form, for Radio Buttons.-->
+            <p>Gender</p>
+            <input type="radio" name="gender" value="male" required> Male <br>
+            <input type="radio" name="gender" value="female" required> Female <br>
+            <input type="radio" name="gender" value="other" required> Other <br>
+
+            <p>Do you consent getting emails for the newsletter?</p>
+
+            <input type="radio" name="consent" value="yes" required> Yes <br>
+            <input type="radio" name="consent" value="no" required> No <br>
+
+            <!-- Radio buttons, when clicked, unchecks the pre-existing one, given if they're on the same "name", if any.-->
+
+            <!-- Ever seen a security question during registration in a certain site? Let's create another form.-->
+
+            <br>
+
+            <label for="security">Security Question</label>
+
+            <select name="security" id="security">
+                <option value="q1">What is my favorite game?</option>
+                <option value="q2">Who is my favorite game character?</option>
+            </select>
+
+            <!-- The select tag is a dropdown filled with choices. Each choice has a value for backend purposes
+            as well as the text associated with it. We have two choices, therefore, we need two <option> tags.-->
+
+            <br>
+
+            <label for="securityanswer">Answer:</label>
+            <input type="text" id="securityanswer" name="securityanswer" required>
+
+            <!-- What if we want a textbox that can have several lines? <we can go for the <textarea> tag.-->
+
+            <br>
+            <label for="bio">Tell me about yourself!</label>
+            <br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Insert text here." required>
+            </textarea>
+
+            <!-- "cols" and "rows" attributes determine the size of the text area.
+            Placeholders are something you'd see initially in the text area. It disappears when
+            you type something in it.-->
+
+            <br>
+            <input type="submit" value="Submit">
+
+            <!-- Here we have a Submit button. The "value" attribute should contain the words we want to
+            put in the button. For instance, we put "Submit".-->
+        </form>
+
+    </body>
+
+            <!-- Sauce:
+
+            https://youtu.be/YwbIeMlxZAU?si=Of0yQzQMEDzGSjA3 
+            
+            In-Depth HTML Sources
+
+            ID - https://www.w3schools.com/html/html_id.asp
+            Name Attribute - https://www.w3schools.com/tags/att_name.asp
+
+            Forms - https://www.w3schools.com/html/html_forms.asp
+            Form Elements, like <input> and <label>- https://www.w3schools.com/html/html_form_elements.asp
+            Input Types, like "type" - https://www.w3schools.com/html/html_form_input_types.asp
+            Input Attributes, like "value" - https://www.w3schools.com/html/html_form_attributes.asp
+
+            -->
+
+
+</html>
